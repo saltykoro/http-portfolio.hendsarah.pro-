@@ -1,0 +1,87 @@
+---
+import experiences from "../collections/experiences.json";
+import AboutExperience from "../components/about-experience.astro";
+import PageHeading from "../components/page-heading.astro";
+import Layout from "../layouts/main.astro";
+---
+
+<Layout title="À propos de moi">
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title="À propos de moi !"
+      description="Étudiante en BTS Communication, je suis passionnée par le design web et la création graphique. Curieuse de nature, j’aime relever des défis qui me permettent d’apprendre et de me dépasser. \n \nMon ambition : concevoir des contenus numériques créatifs et utiles."
+      />
+
+      <img src="/assets/images/about.jpg" class="relative z-30 w-full my-10 rounded-xl" />
+  
+      <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">En résumé</h2>
+      <p
+        class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+      >
+        Communication 🗣 / Graphisme 🖌️ / Conception d'interfaces web 💻
+      </p>
+      <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Je maîtrise les logiciels suivants :</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-4 text-center text-sm text-neutral-600 dark:text-neutral-400">
+        <!-- Illustrator -->
+        <div class="flex flex-col items-center">
+          <img src="public/assets/images/experiences/logoillustrator.png" alt="Illustrator" class="w-12 h-12 mb-2" />
+          <span>Adobe Illustrator</span>
+        </div>
+      
+        <!-- Photoshop -->
+        <div class="flex flex-col items-center">
+          <img src="public/assets/images/experiences/logophotoshop.png" alt="Photoshop" class="w-12 h-12 mb-2" />
+          <span>Adobe Photoshop</span>
+        </div>
+      
+        <!-- InDesign -->
+        <div class="flex flex-col items-center">
+          <img src="public/assets/images/experiences/logoindesign.png" alt="InDesign" class="w-12 h-12 mb-2" />
+          <span>Adobe InDesign</span>
+        </div>
+      
+        <!-- VS Code -->
+        <div class="flex flex-col items-center">
+          <img src="public/assets/images/experiences/logovisualcode.png" alt="VS Code" class="w-12 h-12 mb-2" />
+          <span>VS Code</span>
+        </div>
+      
+        <!-- Figma -->
+        <div class="flex flex-col items-center">
+          <img src="public/assets/images/experiences/logofigma.png" alt="Figma" class="w-12 h-12 mb-2" />
+          <span>Figma</span>
+        </div>
+      
+        <!-- Canva -->
+        <div class="flex flex-col items-center">
+          <img src="public/assets/images/experiences/logocanva.png" alt="Canva" class="w-12 h-12 mb-2" />
+          <span>Canva</span>
+        </div>
+      
+        <!-- Wix -->
+        <div class="flex flex-col items-center">
+          <img src="public/assets/images/experiences/logowix.png" alt="Wix" class="w-12 h-12 mb-2" />
+          <span>Wix</span>
+        </div>
+      
+        <!-- WordPress -->
+        <div class="flex flex-col items-center">
+          <img src="public/assets/images/experiences/logowordpress.png" alt="WordPress" class="w-12 h-12 mb-2" />
+          <span>WordPress</span>
+        </div>
+      </div>
+
+    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Intéressé(e)? Contactez-moi !</h2>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+    >
+      Si vous souhaitez rester informé(e) de mes travaux, n'hésitez pas à <a
+        href="https://www.linkedin.com/in/sarah-hend-a27443210/"
+        target="_blank"
+        class="text-yellow-600 underline">me suivre sur LinkedIn</a
+      >, ou m'envoyer un <a href="mailto:astro-aria#miantiao.me" class="text-yellow-600 underline"
+        >email</a
+      > ,et je me ferai un plaisir de vous répondre.
+    </p>
+  </section>
+</Layout>

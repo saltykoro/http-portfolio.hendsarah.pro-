@@ -1,0 +1,47 @@
+---
+import experiences from "../collections/experiences.json";
+import AboutExperience from "../components/about-experience.astro";
+import PageHeading from "../components/page-heading.astro";
+import Layout from "../layouts/main.astro";
+import Slideshow from "../components/slideshow.astro";
+---
+
+<Layout title="Entreprises-sur-scène">
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title="Projet pour la régie vidéo Entreprises sur scène"
+      description="J'ai été missionnée par la régie vidéo Entreprises Sur Scène de concevoir un support de communication destiné à promouvoir leurs services auprès de leurs clients ou prospects. Mon rôle a été de créer un support visuel attrayant et informatif, en respectant minutieusement la charte graphique de la régie, pour garantir une cohérence avec leur identité visuelle. J’ai veillé à allier esthétique et clarté, en mettant en avant les caractéristiques techniques et les atouts de la vidéo. En parallèle, j'ai également pris en charge la réalisation de diapositives pour un appel d'offres, mais c'est le dépliant qui a constitué le cœur de la mission."
+      />
+<br>
+      <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">1re version (retenue), dépliant en 2 volets</h2>
+
+    <img src="/public/assets/images/posts/depliant2volets.jpg" class="relative z-30 w-full my-10 rounded-xl" />
+    <img src="/public/assets/images/posts/plaquetteess.jpg" class="relative z-30 w-full my-10 rounded-xl" />
+
+    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">2e version, dépliant en 3 volets</h2>
+
+    <img src="/public/assets/images/posts/depliant3volets.jpg" class="relative z-30 w-full my-10 rounded-xl"
+<br>
+    <img src="/public/assets/images/posts/depliant2version.jpg" class="relative z-30 w-full my-10 rounded-xl" 
+    />
+   
+    <h2
+      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    ></h2>
+
+    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Diapositives en réponse à un appel d'offre</h2>
+<br>
+    <title>Diapositives d'un projet vidéo avec le Departement de la Côte d'Or</title>
+
+    <!-- Contenu principal de la page ici -->
+
+      <!-- Ajouter le slideshow en bas de la page -->
+      <Slideshow client:load />
+<br>
+      <a href="https://entreprises-sur-scene.com" target="_blank">https://entreprises-sur-scene.com</a>
+</p>
+
+  </section>
+</Layout>
+
+

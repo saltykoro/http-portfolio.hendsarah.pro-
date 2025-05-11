@@ -1,0 +1,65 @@
+---
+  // Aucun code Astro spécifique ici
+---
+<style>
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+  }
+</style>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="/assets/images/posts/slide1.jpg" />
+  </div>
+  <div class="mySlides fade">
+    <img src="/assets/images/posts/slide2.jpg" />
+  </div>
+  <div class="mySlides fade">
+    <img src="/assets/images/posts/slide3.jpg" />
+  </div>
+  <div class="mySlides fade">
+    <img src="/assets/images/posts/slide4.jpg" />
+  </div>
+  <div class="mySlides fade">
+    <img src="/assets/images/posts/slide5.jpg" />
+  </div>
+  <div class="mySlides fade">
+    <img src="/assets/images/posts/slide6.jpg" />
+  </div>
+  <div class="mySlides fade">
+    <img src="/assets/images/posts/slide7.jpg" />
+  </div>
+  <div class="mySlides fade">
+    <img src="/assets/images/posts/slide8.jpg" />
+  </div>
+  <div class="mySlides fade">
+    <img src="/assets/images/posts/slide9.jpg" />
+  </div>
+</div>
+
+<script client:load>
+  let slideIndex = 0;
+
+  function showSlides() {
+    let slides = document.querySelectorAll(".mySlides");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 2000); // Change image every 4 seconds
+  }
+
+  showSlides();
+</script>
